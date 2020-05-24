@@ -10,18 +10,18 @@ import RouterComp from './router-learn/router-comp.vue'
 
 Vue.config.productionTip = false
 
-// 组件化原理及生命周期执行原理
-// new Vue({
-//   el: '#app',
-//   render: h => h(App)
-// })
-
 new Vue({
   el: '#app',
   data: {
     msg: 'hello vue',
   }
 })
+
+// 组件化原理及生命周期执行原理
+// new Vue({
+//   el: '#app',
+//   render: h => h(App)
+// })
 
 // 合并配置
 /* const childComp = {
