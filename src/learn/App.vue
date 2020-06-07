@@ -2,8 +2,8 @@
   <div id="app">
     <span v-if="flag">aaa</span>
     <div>{{msg}}</div>
-    <button>btn1</button>
-    <!-- <hello-world></hello-world> -->
+    <button @click="flag = false">btn1</button>
+    <hello-world :flag="flag"></hello-world>
     <!-- <router-view></router-view> -->
   </div>
 </template>

@@ -12,9 +12,7 @@ Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
-  data: {
-    msg: 'hello vue',
-  }
+  render: c => c(App)
 })
 
 // 组件化原理及生命周期执行原理
