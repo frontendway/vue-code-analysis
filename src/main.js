@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './learn/App.vue'
+import Diff1 from '@/learn/Diff1'
 import CleanupDeps from './learn/CleanupDeps.vue'
 import VueSet from './learn/VueSet.vue'
 import Computed from './learn/Computed.vue'
@@ -10,16 +11,11 @@ import RouterComp from './router-learn/router-comp.vue'
 
 Vue.config.productionTip = false
 
+// 组件化及生命周期函数执行
 new Vue({
   el: '#app',
-  render: c => c(App)
+  render: h => h(App)
 })
-
-// 组件化原理及生命周期执行原理
-// new Vue({
-//   el: '#app',
-//   render: h => h(App)
-// })
 
 // 合并配置
 /* const childComp = {
@@ -100,4 +96,13 @@ new Vue({
   el: '#app',
   router,
   render: c => c(RouterComp)
+}) */
+
+/* 
+  父组件重渲染，子组件是否重渲染
+  helloworld 组件的 diff
+*/
+/* new Vue({
+  el: '#app',
+  render: createElement => createElement(Diff1)
 }) */
