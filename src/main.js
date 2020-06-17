@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './learn/App.vue'
+import AppMounted from '@/learn/AppMounted'
 import Diff1 from '@/learn/Diff1'
 import CleanupDeps from './learn/CleanupDeps.vue'
 import VueSet from './learn/VueSet.vue'
@@ -12,10 +13,10 @@ import RouterComp from './router-learn/router-comp.vue'
 Vue.config.productionTip = false
 
 // 组件化及生命周期函数执行
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+// new Vue({
+//   el: '#app',
+//   render: h => h(App)
+// })
 
 // 合并配置
 /* const childComp = {
@@ -42,12 +43,21 @@ new Vue({
   render: h => h(childComp)
 }) */
 
+// mounted 钩子函数合并到父组件
+/* new Vue({
+  el: '#app',
+  mounted () {
+    console.log('root mounted')
+  },
+  render: h => h(AppMounted)
+}) */
+
 // 组件注册
-/* Vue.component('app', App)
+Vue.component('app', App)
 new Vue({
   el: '#app',
   template: '<app></app>'
-}) */
+})
 
 // 异步组件
 /* 
