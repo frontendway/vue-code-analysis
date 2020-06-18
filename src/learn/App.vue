@@ -18,9 +18,9 @@ export default {
       msg: 'msg'
     }
   },
-  // components: {
-  //   HelloWorld
-  // },
+  components: {
+    // HelloWorld
+  },
   mounted () {
     console.log('app mounted')
   }

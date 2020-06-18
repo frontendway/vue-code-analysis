@@ -67,19 +67,19 @@ new Vue({
     Header (resolve) {
       setTimeout(() => resolve(Header), 2000)
   components: {
-    Header: () => import('./components/HelloWorld.vue') 
+    Header: () => import('./components/HelloWorld.vue')
 */
 
-Vue.component('HelloWorld', function (resolve, reject) {
-  import(/* webpackChunkName :"HelloWorld" */ './components/HelloWorld.vue')
-  .then(({default: res}) => {
-    resolve(res)
-  })
-})
-new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+// Vue.component('HelloWorld', function (resolve, reject) {
+//   import(/* webpackChunkName:'HelloWorld' */ './components/HelloWorld.vue')
+//   .then(({default: res}) => {
+//     resolve(res)
+//   })
+// })
+// new Vue({
+//   el: '#app',
+//   render: h => h(App)
+// })
 
 // 异步组件 promise
 // Vue.component('HelloWorld', 
@@ -90,11 +90,11 @@ new Vue({
 //   render: h => h(App)
 // })
 
-// 依赖收集与 cleanupDeps 与循环更新 bug
-/* new Vue({
+// 依赖收集与 cleanupDeps 与循环更新 bug demo
+new Vue({
   el: '#app',
   render: c => c(CleanupDeps)
-}) */
+})
 
 // Vue.set
 /* new Vue({
