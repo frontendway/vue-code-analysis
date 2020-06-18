@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-if="flag">{{msg}}</div>
-    <div v-else>{{msg1}}</div>
+    <div v-if="flag">{{msg1}}</div>
+    <div v-else>{{msg2}}</div>
     <button @click="change">change</button>
     <button @click="toggle">toggle</button>
   </div>
@@ -13,7 +13,7 @@ export default {
     return {
       msg2: 'msg2',
       msg1: 'msg1',
-      flag: false
+      flag: true
     }
   },
   methods: {
@@ -24,10 +24,10 @@ export default {
       this.msg1 = Math.random()
     }
   },
-  watch: {
-    msg1 () {
-      this.msg1 = Math.random() + 'new'
-    }
-  }
+  // watch: {
+  //   msg1 () {
+  //     this.msg1 = Math.random() + 'new'
+  //   }
+  // }
 }
 </script>
