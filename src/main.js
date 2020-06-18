@@ -53,32 +53,33 @@ new Vue({
 }) */
 
 // 组件注册
-Vue.component('app', App)
+/* Vue.component('app', App)
 new Vue({
   el: '#app',
   template: '<app></app>'
-})
+}) */
 
-// 异步组件
 /* 
+异步组件
 .vue 文件中写法
   import Header from '@/header.vue'
   components: {
     Header (resolve) {
       setTimeout(() => resolve(Header), 2000)
   components: {
-    Header: () => import('./components/HelloWorld.vue') */
+    Header: () => import('./components/HelloWorld.vue') 
+*/
 
-// Vue.component('HelloWorld', function (resolve, reject) {
-//   import(/* webpackChunkName:'HelloWorld' */ './components/HelloWorld.vue')
-//   .then(({default: res}) => {
-//     resolve(res)
-//   })
-// })
-// new Vue({
-//   el: '#app',
-//   render: h => h(App)
-// }) 
+Vue.component('HelloWorld', function (resolve, reject) {
+  import(/* webpackChunkName :"HelloWorld" */ './components/HelloWorld.vue')
+  .then(({default: res}) => {
+    resolve(res)
+  })
+})
+new Vue({
+  el: '#app',
+  render: h => h(App)
+})
 
 // 异步组件 promise
 // Vue.component('HelloWorld', 
@@ -89,7 +90,7 @@ new Vue({
 //   render: h => h(App)
 // })
 
-// 依赖收集与 cleanupDeps 与循环更新 bug demo
+// 依赖收集与 cleanupDeps 与循环更新 bug
 /* new Vue({
   el: '#app',
   render: c => c(CleanupDeps)

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
 
 export default {
   name: 'app',
@@ -18,9 +18,9 @@ export default {
       msg: 'msg'
     }
   },
-  components: {
-    HelloWorld
-  },
+  // components: {
+  //   HelloWorld
+  // },
   mounted () {
     console.log('app mounted')
   }
