@@ -11,8 +11,8 @@
 export default {
   data () {
     return {
+      msg2: 'msg2',
       msg1: 'msg1',
-      msg: 'msg',
       flag: false
     }
   },

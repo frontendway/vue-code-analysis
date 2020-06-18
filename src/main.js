@@ -3,6 +3,7 @@ import App from './learn/App.vue'
 import AppMounted from '@/learn/AppMounted'
 import Diff1 from '@/learn/Diff1'
 import CleanupDeps from './learn/CleanupDeps.vue'
+import PropsWrap from './learn/PropsWrap.vue'
 import VueSet from './learn/VueSet.vue'
 import Computed from './learn/Computed.vue'
 
@@ -89,6 +90,12 @@ new Vue({
 //   el: '#app',
 //   render: h => h(App)
 // })
+
+// 测试初始化 props，子组件修改 props 报错原理
+/* new Vue({
+  el: '#app',
+  render: c => c(PropsWrap)
+}) */
 
 // 依赖收集与 cleanupDeps 与循环更新 bug demo
 new Vue({
