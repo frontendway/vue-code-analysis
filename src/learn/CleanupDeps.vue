@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-if="flag">{{msg}}</div>
-    <div v-else>{{msg1}}</div>
+    <div v-if="flag">{{msg1}}</div>
+    <div v-else>{{msg2}}</div>
     <button @click="change">change</button>
     <button @click="toggle">toggle</button>
   </div>
