@@ -98,10 +98,10 @@ new Vue({
 }) */
 
 // 依赖收集与 cleanupDeps 与循环更新 bug demo
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(CleanupDeps)
-})
+}) */
 
 // Vue.set
 /* new Vue({
@@ -110,11 +110,11 @@ new Vue({
 }) */
 
 // Computed
-/* new Vue({
+new Vue({
   el: '#app',
   router,
-  render: c => c(RouterComp)
-}) */
+  render: c => c(Computed)
+})
 
 /* 
   父组件重渲染，子组件是否重渲染

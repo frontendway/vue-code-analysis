@@ -24,10 +24,10 @@ export default {
       this.msg1 = Math.random()
     }
   },
-  // watch: {
-  //   msg1 () {
-  //     this.msg1 = Math.random() + 'new'
-  //   }
-  // }
+  watch: {
+    msg1 () {
+      this.msg1 = Math.random() + 'new'
+    }
+  }
 }
 </script>
