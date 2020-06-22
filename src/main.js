@@ -6,6 +6,7 @@ import CleanupDeps from './learn/CleanupDeps.vue'
 import PropsWrap from './learn/PropsWrap.vue'
 import VueSet from './learn/VueSet.vue'
 import Computed from './learn/Computed.vue'
+import Watcher from './learn/Watcher.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -110,10 +111,17 @@ new Vue({
 }) */
 
 // Computed
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(Computed)
+}) */
+
+// Watcher
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(Watcher)
 })
 
 /* 
