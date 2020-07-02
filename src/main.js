@@ -7,8 +7,7 @@ import PropsWrap from './learn/PropsWrap.vue'
 import VueSet from './learn/VueSet.vue'
 import Computed from './learn/Computed.vue'
 import Watcher from './learn/Watcher.vue'
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+import SimpleWatcher from './learn/SimpleWatcher.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -119,12 +118,19 @@ new Vue({
   render: c => c(Computed)
 }) */
 
-// Watcher
+// watcher 实现原理
 new Vue({
   el: '#app',
   router,
-  render: c => c(Watcher)
+  render: c => c(SimpleWatcher)
 })
+
+// 复杂 Watcher 实现原理
+/* new Vue({
+  el: '#app',
+  router,
+  render: c => c(Watcher)
+}) */
 
 /* 
   父组件重渲染，子组件是否重渲染
