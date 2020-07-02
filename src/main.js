@@ -120,16 +120,10 @@ new Vue({
 }) */
 
 // Watcher
-/* new Vue({
-  el: '#app',
-  router,
-  render: c => c(Watcher)
-}) */
-
 new Vue({
   el: '#app',
   router,
-  render: c => c(About)
+  render: c => c(Watcher)
 })
 
 /* 
