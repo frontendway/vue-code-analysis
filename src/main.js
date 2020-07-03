@@ -6,6 +6,8 @@ import CleanupDeps from './learn/CleanupDeps.vue'
 import PropsWrap from './learn/PropsWrap.vue'
 import VueSet from './learn/VueSet.vue'
 import Computed from './learn/Computed.vue'
+import Watcher from './learn/Watcher.vue'
+import SimpleWatcher from './learn/SimpleWatcher.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -98,10 +100,10 @@ new Vue({
 }) */
 
 // 依赖收集与 cleanupDeps 与循环更新 bug demo
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(CleanupDeps)
-})
+}) */
 
 // Vue.set
 /* new Vue({
@@ -113,7 +115,21 @@ new Vue({
 /* new Vue({
   el: '#app',
   router,
-  render: c => c(RouterComp)
+  render: c => c(Computed)
+}) */
+
+// watcher 实现原理
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(SimpleWatcher)
+})
+
+// 复杂 Watcher 实现原理
+/* new Vue({
+  el: '#app',
+  router,
+  render: c => c(Watcher)
 }) */
 
 /* 
