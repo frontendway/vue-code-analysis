@@ -126,10 +126,17 @@ new Vue({
 }) */
 
 // 复杂 Watcher 实现原理
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(Watcher)
+}) */
+
+// 无子组件情况的数据更新的 diff 对比
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(Diff1)
 })
 
 /* 
