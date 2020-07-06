@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <span v-if="flag"> true </span>
-    <div v-else> false </div>
+    <div>{{flag}}</div>
+    <Child :flag="flag" />
     <button @click="toggle">btn1</button>
   </div>
 </template>
 
 <script>
+import Child from './child.vue'
+
 export default {
-  name: 'app',
   data () {
     return {
       flag: true
     }
   },
+  components: {
+    Child
+  },
   methods: {
     toggle () {
-      this.flag = false
+      this.flag = !this.flag
     }
   }
 }

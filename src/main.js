@@ -1,13 +1,12 @@
 import Vue from 'vue'
 import App from './learn/App.vue'
 import AppMounted from '@/learn/AppMounted'
-import Diff1 from '@/learn/Diff1'
 import CleanupDeps from './learn/CleanupDeps.vue'
-import PropsWrap from './learn/PropsWrap.vue'
 import VueSet from './learn/VueSet.vue'
 import Computed from './learn/Computed.vue'
 import Watcher from './learn/Watcher.vue'
 import SimpleWatcher from './learn/SimpleWatcher.vue'
+import Update1 from './learn/update1/index.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -132,11 +131,11 @@ new Vue({
   render: c => c(Watcher)
 }) */
 
-// 无子组件情况的数据更新的 diff 对比
+// 有子组件 diff 对比
 new Vue({
   el: '#app',
   router,
-  render: c => c(Diff1)
+  render: c => c(Update1)
 })
 
 /* 
