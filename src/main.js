@@ -7,6 +7,7 @@ import Computed from './learn/Computed.vue'
 import Watcher from './learn/Watcher.vue'
 import SimpleWatcher from './learn/SimpleWatcher.vue'
 import Update1 from './learn/update1/index.vue'
+import Update2 from './learn/Update2.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -132,10 +133,17 @@ new Vue({
 }) */
 
 // 有子组件 diff 对比
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(Update1)
+}) */
+
+// 无子组件当前组件 diff 对比
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(Update2)
 })
 
 /* 
