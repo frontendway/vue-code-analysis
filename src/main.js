@@ -119,11 +119,11 @@ new Vue({
 }) */
 
 // watcher 实现原理
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(SimpleWatcher)
-})
+}) */
 
 // 复杂 Watcher 实现原理
 /* new Vue({
@@ -131,6 +131,13 @@ new Vue({
   router,
   render: c => c(Watcher)
 }) */
+
+// 无子组件情况的数据更新的 diff 对比
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(Diff1)
+})
 
 /* 
   父组件重渲染，子组件是否重渲染

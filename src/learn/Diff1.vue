@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <span v-if="flag">aaa</span>
-    <div>{{msg}}</div>
-    <button @click="flag = false">btn1</button>
-    <hello-world :flag="flag"></hello-world>
+    <span v-if="flag"> true </span>
+    <div v-else> false </div>
+    <button @click="toggle">btn1</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld'
-
 export default {
   name: 'app',
-  components: {
-    HelloWorld
-  },
   data () {
     return {
-      flag: true,
-      msg: 'msg'
+      flag: true
     }
   },
-  mounted () {
-    console.log('app mounted')
+  methods: {
+    toggle () {
+      this.flag = false
+    }
   }
 }
 </script>
