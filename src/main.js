@@ -8,6 +8,8 @@ import Watcher from './learn/Watcher.vue'
 import SimpleWatcher from './learn/SimpleWatcher.vue'
 import Update1 from './learn/update1/index.vue'
 import Update2 from './learn/Update2.vue'
+import Update3 from './learn/update3/index.vue'
+import Props from './learn/props/index.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -140,10 +142,24 @@ new Vue({
 }) */
 
 // 无子组件当前组件 diff 对比
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(Update2)
+}) */
+
+// 只有子组件数据更新，父组件是否更新
+/* new Vue({
+  el: '#app',
+  router,
+  render: c => c(Update3)
+}) */
+
+// props 的规范化初始化
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(Props)
 })
 
 /* 
