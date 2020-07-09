@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <div>{{ msg }}</div>
+    <hr />
     <Compa :msg="msg" />
     <Compb age="20" />
     <!-- <Compc mess-age="mess-age" /> -->
