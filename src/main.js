@@ -10,6 +10,7 @@ import Update1 from './learn/update1/index.vue'
 import Update2 from './learn/Update2.vue'
 import Update3 from './learn/update3/index.vue'
 import Props from './learn/props/index.vue'
+import Event from './learn/event/index.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -156,17 +157,8 @@ new Vue({
 }) */
 
 // props 的规范化初始化
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(Props)
-})
-
-/* 
-  父组件重渲染，子组件是否重渲染
-  helloworld 组件的 diff
-*/
-/* new Vue({
-  el: '#app',
-  render: createElement => createElement(Diff1)
 }) */

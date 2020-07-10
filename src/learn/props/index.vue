@@ -33,6 +33,10 @@ export default {
   methods: {
     change () {
       this.msg.a = 2
+      this.msg = {
+        c: 1,
+        d: 2
+      }
     }
   }
 }
