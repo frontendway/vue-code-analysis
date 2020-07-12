@@ -12,6 +12,7 @@ import Update3 from './learn/update3/index.vue'
 import Props from './learn/props/index.vue'
 import Event from './learn/event/Index.vue'
 import MoreKey from './learn/MoreKey.vue'
+import VModel from './learn/VModel.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -171,8 +172,14 @@ new Vue({
   render: c => c(Event)
 }) */
 
-new Vue({
+/* new Vue({
   el: '#app',
   router,
   render: c => c(MoreKey)
+}) */
+
+new Vue({
+  el: '#app',
+  router,
+  render: c => c(VModel)
 })
