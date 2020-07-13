@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ message }}</p>
+    <p>输出信息：{{ message }}</p>
     <input type="text" v-model="message">
   </div>
 </template>
