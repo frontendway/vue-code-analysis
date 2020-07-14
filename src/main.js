@@ -13,6 +13,7 @@ import Props from './learn/props/index.vue'
 import Event from './learn/event/Index.vue'
 import MoreKey from './learn/MoreKey.vue'
 import VModel from './learn/VModel.vue'
+import Slot from './learn/slot/index.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -119,67 +120,67 @@ new Vue({
 // Computed
 /* new Vue({
   el: '#app',
-  router,
+  
   render: c => c(Computed)
 }) */
 
 // watcher 实现原理
 /* new Vue({
   el: '#app',
-  router,
+  
   render: c => c(SimpleWatcher)
 }) */
 
 // 复杂 Watcher 实现原理
 /* new Vue({
   el: '#app',
-  router,
+  
   render: c => c(Watcher)
 }) */
 
 // 有子组件 diff 对比
 /* new Vue({
   el: '#app',
-  router,
+  
   render: c => c(Update1)
 }) */
 
 // 无子组件当前组件 diff 对比
 /* new Vue({
   el: '#app',
-  router,
+  
   render: c => c(Update2)
 }) */
 
 // 只有子组件数据更新，父组件是否更新
 /* new Vue({
   el: '#app',
-  router,
   render: c => c(Update3)
 }) */
 
 // props 的规范化初始化
 /* new Vue({
   el: '#app',
-  router,
   render: c => c(Props)
 }) */
 
 // 自定义事件以及原生事件
 /* new Vue({
   el: '#app',
-  router,
   render: c => c(Event)
 }) */
 
 /* new Vue({
   el: '#app',
-  router,
   render: c => c(MoreKey)
+}) */
+
+/* new Vue({
+  el: '#app',
+  render: c => c(VModel)
 }) */
 
 new Vue({
   el: '#app',
-  router,
-  render: c => c(VModel)
+  render: c => c(Slot)
 })
