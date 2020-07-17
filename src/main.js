@@ -185,7 +185,8 @@ new Vue({
 /* new Vue({
   el: '#app',
   render: c => c(Slot)
-}) */
+})
+*/
 
 // 作用域插槽
 new Vue({
