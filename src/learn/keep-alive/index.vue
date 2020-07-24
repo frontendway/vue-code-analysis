@@ -1,6 +1,8 @@
 <template>
   <div>
-    <component :is="is" />
+    <keep-alive>
+      <component :is="is" />  
+    </keep-alive>
     <button @click="change">change</button>
   </div>
 </template>
