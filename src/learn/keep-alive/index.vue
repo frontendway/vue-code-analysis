@@ -1,7 +1,7 @@
 <template>
   <div>
     <keep-alive>
-      <component :is="is" />
+      <component :is="is" />  
     </keep-alive>
     <button @click="change">change</button>
   </div>

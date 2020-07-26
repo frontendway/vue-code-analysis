@@ -7,7 +7,7 @@
 <script>
 export default {
   activated () {
-    console.log('compa activated')
+    console.log('activated compa')
   }
 }
 </script>
