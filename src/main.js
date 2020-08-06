@@ -207,3 +207,5 @@ new Vue({
   el: '#app',
   render: c => c(Tran)
 })
+
+// test object props
