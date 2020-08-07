@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Child :msg="msg" />
+    <Child :obj="obj" :msg="msg" />
   </div>
 </template>
 
 <script>
-import Child from './child.vue'
+import Child from './Child.vue'
 
 export default {
   components: {
@@ -13,9 +13,10 @@ export default {
   },
   data () {
     return {
-      msg: {
+      obj: {
         a: 'parent msg'
-      }
+      },
+      msg: 'msg'
     }
   }
 }

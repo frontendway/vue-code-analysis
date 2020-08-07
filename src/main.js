@@ -17,6 +17,7 @@ import Slot from './learn/slot/index.vue'
 import ScopeSlot from './learn/scope-slot/index.vue'
 import KeepLearn from './learn/keep-alive/index.vue'
 import Tran from './learn/transition/index.vue'
+import ChangeProps from './learn/obj-props/index.vue'
 
 import router from './router'
 import RouterComp from './router-learn/router-comp.vue'
@@ -203,9 +204,13 @@ new Vue({
 }) */
 
 // transition
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(Tran)
-})
+}) */
 
 // test object props
+new Vue({
+  el: '#app',
+  render: c => c(ChangeProps)
+})
