@@ -136,23 +136,20 @@ new Vue({
 }) */
 
 // 复杂 Watcher 实现原理
-/* new Vue({
+new Vue({
   el: '#app',
-  
   render: c => c(Watcher)
-}) */
+})
 
 // 有子组件 diff 对比
 /* new Vue({
   el: '#app',
-  
   render: c => c(Update1)
 }) */
 
 // 无子组件当前组件 diff 对比
 /* new Vue({
   el: '#app',
-  
   render: c => c(Update2)
 }) */
 
@@ -210,7 +207,7 @@ new Vue({
 }) */
 
 // test object props
-new Vue({
+/* new Vue({
   el: '#app',
   render: c => c(ChangeProps)
-})
+}) */
